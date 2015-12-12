@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  text_a: MyString
+  text_b: MyString
+  is_an_anagram: false
+
+two:
+  text_a: MyString
+  text_b: MyString
+  is_an_anagram: false
