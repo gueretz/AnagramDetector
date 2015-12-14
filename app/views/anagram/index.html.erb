@@ -1,0 +1,17 @@
+<h1>Anagram Detector</h1>
+
+	<div class="alert">
+	</div>
+	<%= form_for @check,:url=>'/check' do | f | %>
+		<div class="col-md-8">
+			<%= f.label :text_a, 'Text:' %>
+			<%= f.text_field :text_a , class: "form-control text_a", placeholder: "Insert the text", required: true %> <br>
+		</div>
+		<div class="col-md-8">
+			<%=	f.label :text_b, 'Possible anagram:' %> <br>
+			<%= f.text_field :text_b , class: "form-control text_b", placeholder: "Insert the possible anagram", required: true %> <br>
+		</div>
+		<div class="col-md-6">
+			<%= f.submit 'Verify' , class: "btn btn-danger btn-verify"%>
+		</div> 
+	<% end %>
