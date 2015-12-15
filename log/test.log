@@ -1,0 +1,205 @@
+  [1m[36m (237.8ms)[0m  [1mDROP DATABASE IF EXISTS "anadet_test"[0m
+  [1m[35m (743.2ms)[0m  CREATE DATABASE "anadet_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (120.1ms)[0m  CREATE TABLE "checks" ("id" serial primary key, "text_a" character varying, "text_b" character varying, "is_an_anagram" boolean, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (58.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (64.8ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (10.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151212182753')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text_a", "ola teste"], ["text_b", "teste ola"], ["is_an_anagram", "t"], ["created_at", "2015-12-15 21:20:30.485501"], ["updated_at", "2015-12-15 21:20:30.485501"]]
+  [1m[35m (19.3ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text_a", "ola teste"], ["text_b", "teste ola"], ["is_an_anagram", "t"], ["created_at", "2015-12-15 21:22:13.532231"], ["updated_at", "2015-12-15 21:22:13.532231"]]
+  [1m[35m (26.7ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text_a", "ola teste"], ["text_b", "teste ola"], ["is_an_anagram", "t"], ["created_at", "2015-12-15 21:26:43.857762"], ["updated_at", "2015-12-15 21:26:43.857762"]]
+  [1m[35m (57.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["text_a", "olq teste"], ["text_b", "teste ola"], ["is_an_anagram", "f"], ["created_at", "2015-12-15 21:26:43.921584"], ["updated_at", "2015-12-15 21:26:43.921584"]]
+  [1m[36m (15.8ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text_a", "ola teste"], ["text_b", "teste ola"], ["is_an_anagram", "t"], ["created_at", "2015-12-15 21:47:04.149163"], ["updated_at", "2015-12-15 21:47:04.149163"]]
+  [1m[35m (34.1ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["text_a", "olq teste"], ["text_b", "teste ola"], ["is_an_anagram", "f"], ["created_at", "2015-12-15 21:47:04.189126"], ["updated_at", "2015-12-15 21:47:04.189126"]]
+  [1m[36m (7.7ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text_a", "ola teste"], ["text_b", "teste ola"], ["is_an_anagram", "t"], ["created_at", "2015-12-15 21:47:53.341036"], ["updated_at", "2015-12-15 21:47:53.341036"]]
+  [1m[35m (33.7ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["text_a", "olq teste"], ["text_b", "teste ola"], ["is_an_anagram", "f"], ["created_at", "2015-12-15 21:47:53.380665"], ["updated_at", "2015-12-15 21:47:53.380665"]]
+  [1m[36m (7.7ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text_a", "ola teste"], ["text_b", "teste ola"], ["is_an_anagram", "t"], ["created_at", "2015-12-15 21:50:37.146078"], ["updated_at", "2015-12-15 21:50:37.146078"]]
+  [1m[35m (34.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["text_a", "olq teste"], ["text_b", "teste ola"], ["is_an_anagram", "f"], ["created_at", "2015-12-15 21:50:37.186198"], ["updated_at", "2015-12-15 21:50:37.186198"]]
+  [1m[36m (7.7ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text_a", "ola teste"], ["text_b", "teste ola"], ["is_an_anagram", "t"], ["created_at", "2015-12-15 21:51:22.786515"], ["updated_at", "2015-12-15 21:51:22.786515"]]
+  [1m[35m (57.7ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["text_a", "olq teste"], ["text_b", "teste ola"], ["is_an_anagram", "f"], ["created_at", "2015-12-15 21:51:22.849837"], ["updated_at", "2015-12-15 21:51:22.849837"]]
+  [1m[36m (7.8ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text_a", "ola teste"], ["text_b", "teste ola"], ["is_an_anagram", "t"], ["created_at", "2015-12-15 21:52:46.354584"], ["updated_at", "2015-12-15 21:52:46.354584"]]
+  [1m[35m (17.4ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["text_a", "olq teste"], ["text_b", "teste ola"], ["is_an_anagram", "f"], ["created_at", "2015-12-15 21:52:46.377988"], ["updated_at", "2015-12-15 21:52:46.377988"]]
+  [1m[36m (7.8ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnagramController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+Processing by AnagramController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text_a", "ola teste"], ["text_b", "teste ola"], ["is_an_anagram", "t"], ["created_at", "2015-12-15 21:53:02.618108"], ["updated_at", "2015-12-15 21:53:02.618108"]]
+  [1m[35m (18.0ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["text_a", "olq teste"], ["text_b", "teste ola"], ["is_an_anagram", "f"], ["created_at", "2015-12-15 21:53:02.641956"], ["updated_at", "2015-12-15 21:53:02.641956"]]
+  [1m[36m (7.8ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnagramController#index as HTML
+  Rendered anagram/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Processing by AnagramController#index as HTML
+  Rendered anagram/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text_a", "ola teste"], ["text_b", "teste ola"], ["is_an_anagram", "t"], ["created_at", "2015-12-15 21:56:12.816918"], ["updated_at", "2015-12-15 21:56:12.816918"]]
+  [1m[35m (16.5ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["text_a", "olq teste"], ["text_b", "teste ola"], ["is_an_anagram", "f"], ["created_at", "2015-12-15 21:56:12.841530"], ["updated_at", "2015-12-15 21:56:12.841530"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnagramController#index as HTML
+  Rendered anagram/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Processing by AnagramController#verify as HTML
+  Parameters: {"check"=>{"text_a"=>"any text a", "text_b"=>"any text"}}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.9ms)
+Processing by AnagramController#index as HTML
+  Rendered anagram/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+Processing by AnagramController#verify as HTML
+  Parameters: {"check"=>{"text_a"=>"any text a", "text_b"=>"any text"}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text_a", "ola teste"], ["text_b", "teste ola"], ["is_an_anagram", "t"], ["created_at", "2015-12-15 22:02:15.177849"], ["updated_at", "2015-12-15 22:02:15.177849"]]
+  [1m[35m (12.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["text_a", "olq teste"], ["text_b", "teste ola"], ["is_an_anagram", "f"], ["created_at", "2015-12-15 22:02:15.199468"], ["updated_at", "2015-12-15 22:02:15.199468"]]
+  [1m[36m (6.2ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnagramController#index as HTML
+  Rendered anagram/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+Processing by AnagramController#verify as HTML
+  Parameters: {"check"=>{"text_a"=>"any text a", "text_b"=>"any text"}}
+  Rendered anagram/verify.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+Processing by AnagramController#index as HTML
+  Rendered anagram/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+Processing by AnagramController#verify as HTML
+  Parameters: {"check"=>{"text_a"=>"any text a", "text_b"=>"any text"}}
+  Rendered anagram/verify.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text_a", "ola teste"], ["text_b", "teste ola"], ["is_an_anagram", "t"], ["created_at", "2015-12-15 22:03:02.400561"], ["updated_at", "2015-12-15 22:03:02.400561"]]
+  [1m[35m (18.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["text_a", "olq teste"], ["text_b", "teste ola"], ["is_an_anagram", "f"], ["created_at", "2015-12-15 22:03:02.427236"], ["updated_at", "2015-12-15 22:03:02.427236"]]
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnagramController#index as HTML
+  Rendered anagram/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Processing by AnagramController#index as HTML
+  Rendered anagram/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text_a", "ola teste"], ["text_b", "teste ola"], ["is_an_anagram", "t"], ["created_at", "2015-12-15 22:04:47.073776"], ["updated_at", "2015-12-15 22:04:47.073776"]]
+  [1m[35m (151.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["text_a", "olq teste"], ["text_b", "teste ola"], ["is_an_anagram", "f"], ["created_at", "2015-12-15 22:04:47.234214"], ["updated_at", "2015-12-15 22:04:47.234214"]]
+  [1m[36m (6.1ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnagramController#index as HTML
+  Rendered anagram/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Processing by AnagramController#verify as HTML
+  Parameters: {"check"=>{"text_a"=>"text a", "text_b"=>"text b"}}
+  Rendered anagram/verify.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+Processing by AnagramController#index as HTML
+  Rendered anagram/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+Processing by AnagramController#verify as HTML
+  Parameters: {"check"=>{"text_a"=>"text a", "text_b"=>"text b"}}
+  Rendered anagram/verify.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text_a", "ola teste"], ["text_b", "teste ola"], ["is_an_anagram", "t"], ["created_at", "2015-12-15 22:05:53.643765"], ["updated_at", "2015-12-15 22:05:53.643765"]]
+  [1m[35m (23.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["text_a", "olq teste"], ["text_b", "teste ola"], ["is_an_anagram", "f"], ["created_at", "2015-12-15 22:05:53.676574"], ["updated_at", "2015-12-15 22:05:53.676574"]]
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnagramController#index as HTML
+  Rendered anagram/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+Processing by AnagramController#verify as HTML
+  Parameters: {"check"=>{"text_a"=>"text a", "text_b"=>"text b"}}
+  Rendered anagram/verify.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.0ms)
+Processing by AnagramController#index as HTML
+  Rendered anagram/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+Processing by AnagramController#verify as HTML
+  Parameters: {"check"=>{"text_a"=>"text a", "text_b"=>"text b"}}
+  Rendered anagram/verify.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text_a", "ola teste"], ["text_b", "teste ola"], ["is_an_anagram", "t"], ["created_at", "2015-12-15 22:07:47.928475"], ["updated_at", "2015-12-15 22:07:47.928475"]]
+  [1m[35m (21.6ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["text_a", "olq teste"], ["text_b", "teste ola"], ["is_an_anagram", "f"], ["created_at", "2015-12-15 22:07:47.957991"], ["updated_at", "2015-12-15 22:07:47.957991"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AnagramController#index as HTML
+  Rendered anagram/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+Processing by AnagramController#verify as HTML
+  Parameters: {"check"=>{"text_a"=>"text a", "text_b"=>"text b"}}
+  Rendered anagram/verify.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms)
+Processing by AnagramController#index as HTML
+  Rendered anagram/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+Processing by AnagramController#verify as HTML
+  Parameters: {"check"=>{"text_a"=>"text a", "text_b"=>"text b"}}
+  Rendered anagram/verify.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["text_a", "ola teste"], ["text_b", "teste ola"], ["is_an_anagram", "t"], ["created_at", "2015-12-15 22:12:00.370572"], ["updated_at", "2015-12-15 22:12:00.370572"]]
+  [1m[35m (16.2ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "checks" ("text_a", "text_b", "is_an_anagram", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["text_a", "olq teste"], ["text_b", "teste ola"], ["is_an_anagram", "f"], ["created_at", "2015-12-15 22:12:00.394445"], ["updated_at", "2015-12-15 22:12:00.394445"]]
+  [1m[36m (6.8ms)[0m  [1mCOMMIT[0m
