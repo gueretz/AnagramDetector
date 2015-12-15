@@ -1,0 +1,9 @@
+<center>	
+	<% if @check.is_an_anagram %>
+		<h1>This is an Anagram!</h1>
+		<%= image_tag "confirm.png", width:'500', height:'500' %>
+	<% else %>
+		<h1>This is not an anagram! </h1>
+		<%= image_tag "rejection.png", width:'500', height:'500' %>
+	<% end %>
+</center>
