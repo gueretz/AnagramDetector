@@ -1,28 +1,13 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+How to use?
 
-Things you may want to cover:
+1° Enter the text in the first text box
+2° Enter the possible anagram in the second text box
+3° Click to verify and wait for the result
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
+ruby version - 2.2.1
+rails version - 4.2.4
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
